@@ -1,0 +1,18 @@
+/* 
+transition-delay: => Animation의 지연시간	3s
+transition-duration: => Animation의 지속시간 1s
+transition-property: => css속성중에 어떤 속성을 Animation 시키겠느냐.
+transition-timing-function: => Animation 효과
+*/
+
+.wrap {max-width: 1200px; margin: 100px auto; 
+	display: flex; justify-content: space-between;}
+.wrap > li {flex: 24% 0 0;}
+.wrap .name	{font-size: 1.5rem; color: darkblue; padding: 0.5rem 0;}
+.wrap .cont {color: #777;}
+.wrap .pic {overflow: hidden;}
+.wrap img {
+	transition-duration: 0.5s;
+	transition-property: all;
+}
+.wrap img:hover {transform: scale(1.2);}

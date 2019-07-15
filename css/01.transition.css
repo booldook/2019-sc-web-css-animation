@@ -1,0 +1,16 @@
+/* 
+transition-delay: => Animation의 지연시간	3s
+transition-duration: => Animation의 지속시간 1s
+transition-property: => css속성중에 어떤 속성을 Animation 시키겠느냐.
+transition-timing-function: => Animation 효과
+*/
+
+.wrap {max-width: 1200px; margin: auto;}
+.box {width: 200px; height: 200px; margin: 50px;}
+.box1 {background-color: #145b85;
+	/* transition-delay: 1s;	 */
+	transition-duration: 2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+.box1:hover {width: 1000px; height: 400px; opacity: 0.8;}
