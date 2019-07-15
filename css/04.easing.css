@@ -1,0 +1,13 @@
+html, body {height: 100%; display: flex; justify-content: center; align-items: center;}
+
+.box {width: 200px; height: 200px; flex-grow: 0; background-color: red;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(1800deg);}
+}

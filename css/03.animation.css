@@ -14,6 +14,7 @@ animation-timing-function: linear;
 - easy 값
 animation-fill-mode: forwards;
 - Animation 종료 후 0%로 복귀(backwards), 100%에 멈춤(forwards)
+animation-play-state: running|paused;
 */
 
 body {height: 100%;}
@@ -27,7 +28,7 @@ body {height: 100%;}
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
-
+.box:hover {animation-play-state: paused;}
 @keyframes movingBox {
 	0% {top: 0; left: 0;}
 	33.33% {top: 0; left: 80%; background-color: limegreen;}
