@@ -7,7 +7,9 @@ transition-timing-function: => Animation 효과
 
 .wrap {max-width: 1200px; margin: 100px auto; 
 	display: flex; justify-content: space-between;}
-.wrap > li {flex: 24% 0 0;}
+.wrap > li {flex: 24% 0 0; position: relative; top: 20px; opacity: 0.8;
+	transition: all 0.5s;
+}
 .wrap .name	{font-size: 1.5rem; color: darkblue; padding: 0.5rem 0;}
 .wrap .cont {color: #777;}
 .wrap .pic {overflow: hidden;}
@@ -16,3 +18,4 @@ transition-timing-function: => Animation 효과
 	transition-property: all;
 }
 .wrap img:hover {transform: scale(1.2);}
+.wrap > li:hover {opacity: 1; top: 0;}
