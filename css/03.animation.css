@@ -1,0 +1,37 @@
+/* 
+animation-name: movingBox;
+- @keyframes 의 이름을 준다.
+animation-duration: 4s;
+- Animation 진행 속도
+animation-delay: 1s;
+- Animation 지연 속도
+animation-iteration-count: 1;
+- Animation 반복횟수(infinite는 무한)
+animation-direction: alternate-reverse;
+- Animation 방향
+(normal, reverse, alternate(normal이후reverse실행), alternate-reverse)
+animation-timing-function: linear;
+- easy 값
+animation-fill-mode: forwards;
+- Animation 종료 후 0%로 복귀(backwards), 100%에 멈춤(forwards)
+*/
+
+body {height: 100%;}
+.box {width: 200px; height: 200px; background-color: darkred; margin: 50px;
+	position: absolute; top: 0; left: 0;
+	animation-name: movingBox;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	/* animation-direction: alternate-reverse; */
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes movingBox {
+	0% {top: 0; left: 0;}
+	33.33% {top: 0; left: 80%; background-color: limegreen;}
+	66.66% {top: 60%; left: 80%; background-color: mediumblue;}
+	100% {top: 60%; left: 0; background-color: olive;}
+	/* 100% {top: 0; left: 0;} */
+}
